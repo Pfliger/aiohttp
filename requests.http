@@ -1,0 +1,67 @@
+# создание объявления
+POST http://127.0.0.1:8080/post
+Content-Type: application/json
+
+{
+  "title": "test post",
+  "text": "test text",
+  "user_id": 1
+}
+
+###
+
+# получение объявления
+GET http://127.0.0.1:8080/post/8
+Content-Type: application/json
+
+
+###
+
+# получение всех объявлений
+GET http://127.0.0.1:8080/posts
+Content-Type: application/json
+
+###
+
+
+# удаление объявления
+DELETE http://127.0.0.1:8080/post/5
+Content-Type: application/json
+
+
+###
+
+
+# создание пользователя
+POST http://127.0.0.1:8080/user
+Content-Type: application/json
+
+{
+  "username": "test user1",
+  "email": "test4@mail.ru",
+  "password": "testpassword123451"
+}
+
+###
+
+# получение пользователя
+GET http://127.0.0.1:8080/user/1
+Content-Type: application/json
+
+###
+
+
+# получение пользователей
+GET http://127.0.0.1:8080/users
+Content-Type: application/json
+
+
+###
+
+
+# удаление пользователя
+DELETE http://127.0.0.1:8080/user/10
+Content-Type: application/json
+
+
+
